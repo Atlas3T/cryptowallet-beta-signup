@@ -9,11 +9,8 @@ var template = {
 }
 
 
-var countDownDate = new Date(template.date).getTime(), // The countdown is intentionally set 15 mins prior to the actual event
-    countdown = document.getElementById('js-countdown');
-    cta = document.getElementById('js-cta');
+var cta = document.getElementById('js-cta');
     title = document.getElementById('js-title');
-    kicker = document.getElementById('js-kicker');
     deck = document.getElementById('js-deck');
     mockup = document.getElementById('js-mockup');
  
@@ -37,8 +34,6 @@ var x = setTimeout(function() {
     title.classList.add('fade-in');
     deck.classList.add('fade-in');
     mockup.classList.add('fade-in');
-    // countdown.classList.add('fade-in');
     cta.classList.add('fade-in');
-
 },
 1000);
